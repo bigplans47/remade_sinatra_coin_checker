@@ -8,5 +8,6 @@ get('/') do
 end
 
 get('/output') do
+  @user_input = params.fetch("user_input")
   erb(:output)
 end
