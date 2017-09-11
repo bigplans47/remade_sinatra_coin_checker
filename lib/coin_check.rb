@@ -10,7 +10,7 @@ class Coin
     nickel = 5
     penny = 1
     the_coin_array = []
-    money_left = @user_input
+    money_left = @user_input.to_i
     while (money_left >= 25)
       money_left = money_left - 25
       the_coin_array.push("Quarter")
