@@ -7,7 +7,7 @@ get('/') do
   erb(:input)
 end
 
-get('/output') do
+post('/output') do
   @user_input = params.fetch("user_input")
   new_coin = Coin.new(@user_input)
   @output_to_show = new_coin.coin_calculator()

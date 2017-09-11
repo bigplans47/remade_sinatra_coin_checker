@@ -1,7 +1,7 @@
 class Coin
 
   def initialize(user_input)
-    @user_input = user_input
+    @user_input = user_input.to_i
   end
 
   def coin_calculator()
@@ -10,7 +10,7 @@ class Coin
     nickel = 5
     penny = 1
     the_coin_array = []
-    money_left = @user_input.to_i
+    money_left = @user_input
     while (money_left >= 25)
       money_left = money_left - 25
       the_coin_array.push("Quarter")
